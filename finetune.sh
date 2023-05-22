@@ -10,7 +10,6 @@ python finetune.py \
     --data_path "./data/finetune_law_data.json" \
     --output_dir "./outputs/"${experiment_name} \
     --batch_size 64 \
-    --micro_batch_size 8 \
     --num_epochs 20 \
     --learning_rate 3e-4 \
     --cutoff_len 256 \
@@ -18,7 +17,6 @@ python finetune.py \
     --lora_r 8 \
     --lora_alpha 16 \
     --lora_dropout 0.05 \
-    --lora_target_modules "[q_proj,v_proj]" \
     --train_on_inputs True \
     --add_eos_token True \
     --group_by_length False \
@@ -36,7 +34,6 @@ python finetune.py \
 #     --data_path "./data/finetune_law_data.json" \
 #     --output_dir "./outputs/"${experiment_name} \
 #     --batch_size 64 \
-#     --micro_batch_size 8 \
 #     --num_epochs 20 \
 #     --learning_rate 3e-4 \
 #     --cutoff_len 256 \
